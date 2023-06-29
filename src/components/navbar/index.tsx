@@ -24,7 +24,7 @@ function Navbar(props: { text: string; }) {
 
     return (
         <div className="navbar">
-            <a href='null'><p>Coded & Desinged by Bruno</p></a>
+            <p>Coded & Desinged by Bruno</p>
             <ul className="left-side">
                 {linksList.map((link) => {
                     return (

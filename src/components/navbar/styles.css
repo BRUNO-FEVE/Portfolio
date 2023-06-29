@@ -4,12 +4,6 @@ p {
     margin: 0;
 }
 
-a {
-    color: black;
-    text-decoration: none;
-    pointer-events: none;
-}
-
 .navbar {
     margin-left: 39px;
     display: flex;
@@ -27,8 +21,4 @@ a {
 .left-side li {
     margin-right: 58px;
     padding: 5px;
-}
-
-.isHovered {
-    position: absolute;
 }
