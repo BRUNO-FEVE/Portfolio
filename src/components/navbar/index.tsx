@@ -1,6 +1,8 @@
 import "./styles.css"
+import { motion } from 'framer-motion';
 
-function navbar(props: { text: any; }) {
+function Navbar(props: { text: string; }) {
+
     const linksList = [
         {
             id: 1,
@@ -17,18 +19,29 @@ function navbar(props: { text: any; }) {
             text: 'Contato',
             url: '',
         },
-    ]
+    ];
+
 
     return (
         <div className="navbar">
-            <p>Coded & Desinged by Bruno</p>
+            <a href='null'><p>Coded & Desinged by Bruno</p></a>
             <ul className="left-side">
                 {linksList.map((link) => {
-                    return (<li>{link.text}</li>)
+                    return (
+                        <motion.li 
+                            drag 
+                            dragConstraints={{
+                                top: 0,
+                                left: 0,
+                                right: 0,
+                                bottom: 0,
+                        }}>
+                            <p>{link.text}</p>
+                        </motion.li>)
                 })}
             </ul>
         </div>
     )
 }
 
-export default navbar;
+export default Navbar;
