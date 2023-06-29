@@ -1,0 +1,27 @@
+p {
+    font-family: roboto-slab-light;
+    font-size: 18px;
+    margin: 0;
+}
+
+.navbar {
+    margin-left: 39px;
+    display: flex;
+    align-items: center;
+}
+
+.left-side {
+    margin-left: auto;
+
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.left-side li {
+    margin-right: 58px;
+}
+
+.left-side li:hover {
+    font-size: 20px;
+}

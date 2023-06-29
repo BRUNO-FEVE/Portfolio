@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: roboto-slab-regular;
   font-weight: 100;
   -webkit-font-smoothing: antialiased;
@@ -11,13 +12,16 @@ code {
     monospace;
 }
 
-/* Fonts */ 
+/* Fonts
+  Raleway */ 
 
 @font-face {
   font-family: raleway;
   src: url(../public/fonts/Raleway-VariableFont_wght.ttf);
   font-weight: normal;
 }
+
+/* Roboto */ 
 
 @font-face {
   font-family: roboto-regular;
@@ -28,6 +32,8 @@ code {
   font-family: roboto-regular-light;
   src: url(../public/fonts/roboto/Roboto-Light.ttf);
 }
+
+/* Roboto Slab */ 
 
 @font-face {
   font-family: roboto-slab-light;
