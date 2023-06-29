@@ -5,7 +5,7 @@ import NavBar from '../../components/navbar/index';
 function main_page() {
   return (
     <>
-    <NavBar />
+    <NavBar text="Projetos"/>
     </>
   );
 }

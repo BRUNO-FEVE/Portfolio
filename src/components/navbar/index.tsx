@@ -1,13 +1,31 @@
 import "./styles.css"
 
-function navbar() {
+function navbar(props: { text: any; }) {
+    const linksList = [
+        {
+            id: 1,
+            text: props.text,
+            url: '',
+        },
+        {
+            id: 2,
+            text: 'Sobre Mim',
+            url: '',
+        },
+        {
+            id: 3,
+            text: 'Contato',
+            url: '',
+        },
+    ]
+
     return (
         <div className="navbar">
             <p>Coded & Desinged by Bruno</p>
             <ul className="left-side">
-                <li><p>Projects</p></li>
-                <li><p>Sobre Mim</p></li>
-                <li><p>Contato</p></li>
+                {linksList.map((link) => {
+                    return (<li>{link.text}</li>)
+                })}
             </ul>
         </div>
     )
