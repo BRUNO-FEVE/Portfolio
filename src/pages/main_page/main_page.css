@@ -3,7 +3,8 @@ body {
 }
 
 .background-text {
-  margin-top: 251px;
+  margin: 251px 54px;
+  margin-bottom: 0;
 
   display: flex;
   align-items: center;
@@ -30,10 +31,10 @@ img {
 }
 
 h1 {
-  font-size: 256px;
-  margin-top: 145px;
+  font-size: 200px;
+  margin-top: 272px;
 
   color: white;
-  mix-blend-mode: difference;
+  mix-blend-mode: difference
 }
 
