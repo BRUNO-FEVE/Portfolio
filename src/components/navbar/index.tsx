@@ -1,5 +1,6 @@
 import "./styles.css"
 import { motion } from 'framer-motion';
+import { read } from "fs";
 
 function Navbar(props: { text: string; }) {
 
@@ -23,7 +24,14 @@ function Navbar(props: { text: string; }) {
 
 
     return (
-        <div className="navbar">
+        <motion.div className="navbar"
+            initial={{opacity: 0, y: -200}}
+            animate={{opacity: 1, y: 0}}
+            transition={{
+                ease: 'easeInOut',
+                duration: 1.5, 
+                delay: .1
+            }}>
             <p>Coded & Desinged by Bruno</p>
             <ul className="left-side">
                 {linksList.map((link) => {
@@ -40,7 +48,7 @@ function Navbar(props: { text: string; }) {
                         </motion.li>)
                 })}
             </ul>
-        </div>
+        </motion.div>
     )
 }
 
