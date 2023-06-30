@@ -10,11 +10,11 @@ function main_page() {
       <div className='first-section'>
         <div className='background-text'>
           <p>Estudante <br/> Engenharia de Computação & Front End</p>
-          <p>Localizado na Zona Sul de São Paulo</p>
+          <p className='location'>Localizado na Zona Sul de São Paulo</p>
         </div>
-        <figure>
-          <img src={img} alt='Bruno Fevereiro' />
-        </figure>
+        <div className='background-image'>
+          <h1>- Bruno Fevereiro - Bruno Fevereiro -</h1>
+        </div>
       </div>
     </>
   );

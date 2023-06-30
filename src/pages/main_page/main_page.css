@@ -1,31 +1,36 @@
 .background-text {
   margin: 305px 54px 0px 27px ;
 
+  position: absolute;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+}
+
+.location {
+  margin-left: 90%;
 }
 
 .background-text p {
   font-family: roboto-slab-regular;
 }
 
-img {
-  max-width: 672.028px;
-  max-height: 828px;
+.background-image {
+  background-image: url(../../assets/retrato-sem-fundo.png);
+  background-size: 672.028px, 828px;
+  background-repeat: no-repeat;
+  background-position: center 32px;
+
+  -webkit-border-radius: 350px;
+  -moz-border-radius: 350px;
   border-radius: 350px;
-
-  position: absolute;
-  z-index: -1;
-  
-  top: 32px;
-  left: 0;
-  right: 0;
-
-  margin: 0 auto;
 }
 
 h1 {
   font-size: 256px;
-  margin-top: 145px;
+  color: white;
+  mix-blend-mode: difference;
+  padding: 466px 0;
+  margin: 0;
 }
+
