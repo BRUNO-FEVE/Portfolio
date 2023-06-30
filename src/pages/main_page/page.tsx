@@ -12,9 +12,8 @@ function main_page() {
           <p>Estudante <br/> Engenharia de Computação & Front End</p>
           <p className='location'>Localizado na Zona Sul de São Paulo</p>
         </div>
-        <div className='background-image'>
           <h1>- Bruno Fevereiro - Bruno Fevereiro -</h1>
-        </div>
+          <img src={img} alt="Bruno Fevereiro"/>
       </div>
     </>
   );
