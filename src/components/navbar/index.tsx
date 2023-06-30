@@ -1,6 +1,5 @@
 import "./styles.css"
 import { motion } from 'framer-motion';
-import { read } from "fs";
 
 function Navbar(props: { text: string; }) {
 
