@@ -24,6 +24,13 @@ function main_page() {
           <button>Sobre Mim<HiOutlineArrowLongRight className='arrow-icon'/></button>
         </div>
       </div>
+      <div className='third-section'>
+          <p>Últimos Projetos: </p>
+          <div className='projects-boxes'>
+            <div className='first-box'><p>Hackathon Back-End</p></div>
+            
+          </div>
+      </div>
     </>
   );
 }
