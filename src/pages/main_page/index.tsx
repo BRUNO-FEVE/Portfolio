@@ -2,7 +2,7 @@ import React from 'react';
 import './main_page.css';
 import NavBar from '../../components/navbar/index';
 import portrait from '../../assets/retrato-sem-fundo.png'
-import maua from '../../assets/maua-white-logo.png'
+import maua from '../../assets/maua-white-logo.png' 
 import Marquee from 'react-fast-marquee';
 import { HiOutlineArrowLongRight } from 'react-icons/hi2'
 
@@ -29,10 +29,10 @@ function main_page() {
           <p>Últimos Projetos: </p>
           <div className='projects-boxes'>
             <div className='first-box'><p>Hackathon Back-End</p></div>
-              <div className='second-box'>
-                {/* <img src={maua} alt="Hour Counter" className='maua-logo'/> */}
-              </div>
-              <div className='third-box'></div>
+            <div className='second-box'>
+              <img src={maua} alt="Hour Counter" className='maua-logo'/>
+            </div>
+            <div className='third-box'></div>
           </div>
       </div>
     </>
