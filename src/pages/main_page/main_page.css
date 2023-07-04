@@ -99,6 +99,10 @@ h1 {
 .projects-boxes {
   margin-top: 32px;
   margin-bottom: 200px;
+
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 26px 17px;
 }
 
 .first-box {
@@ -109,12 +113,30 @@ h1 {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+
+  grid-column-start: 1;
+  grid-column-end: 4;
 }
 
 .first-box p {
   color: white;
+  font-size: 12px;
 
   position: absolute;
-  bottom: 24px;
+  bottom: 318px;
   left: 24px;
+}
+
+.second-box {
+  height: 268px;
+
+  background-color: black;
+
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.third-box {
+  height: 268px;
+  background-color: rgba(67, 97, 238, 1);
 }
