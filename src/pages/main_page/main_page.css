@@ -101,7 +101,7 @@ h1 {
   margin-bottom: 200px;
 
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 33% 33% 33%;
   gap: 26px 17px;
 }
 
@@ -148,44 +148,16 @@ h1 {
 }
 
 .hour-counter-logo {
-  position: relative;
-}
-
-.maua-logo {
-  position: relative;
-  margin-right: 39px;
-  margin-left: 0;
   height: 152px;
   width: 152px;
+  margin-right: 39px;
 
-  top: 0;
+  background-image: url('../../assets/maua-white-logo.png');
+  background-size: cover;
 
-  z-index: 1;
-  border-radius: 0;
-}
-
-.pointer {
-  border-radius: 30px;
-
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-
-.big-pointer {
-  background-color: white;
-
-  width: 47.381px;
-  height: 3px;
-}
-
-.small-pointer {
-  background-color: red;
-  width: 29.935px;
-  height: 3px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
 }
 
 .third-box {

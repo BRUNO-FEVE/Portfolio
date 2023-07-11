@@ -31,9 +31,8 @@ function main_page() {
             <div className='first-box'><p>Hackathon Back-End</p></div>
             <div className='second-box'>
               <div className='hour-counter-logo'>
-                <img src={maua} alt="Hour Counter" className='maua-logo'/>  
-                <div className='big-pointer pointer'></div>
-                <div className='small-pointer pointer'></div>
+                {/* <div className='big-pointer pointer'></div>
+                <div className='small-pointer pointer'></div> */}
               </div>
               <p>Hour Counter</p>
             </div>
