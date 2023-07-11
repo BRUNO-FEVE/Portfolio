@@ -2,7 +2,6 @@ import React from 'react';
 import './main_page.css';
 import NavBar from '../../components/navbar/index';
 import portrait from '../../assets/retrato-sem-fundo.png'
-import maua from '../../assets/maua-white-logo.png' 
 import Marquee from 'react-fast-marquee';
 import { HiOutlineArrowLongRight } from 'react-icons/hi2'
 

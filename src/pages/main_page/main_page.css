@@ -163,4 +163,9 @@ h1 {
 .third-box {
   height: 268px;
   background-color: rgba(67, 97, 238, 1);
+
+  background-image: url('../../assets/DizAi-Logo.png');
+  background-size: 223px 191px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
