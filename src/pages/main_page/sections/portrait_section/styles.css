@@ -11,6 +11,10 @@
   .background-text p {
     font-family: roboto-slab-regular;
   }
+
+  .web-loc {
+    text-align: right;
+  }
   
   img {
     width: 672.028px;
@@ -30,6 +34,7 @@
     font-size: 200px;
     margin-top: 272px;
     margin-bottom: 0;
+    margin-left: 30px;
   
     color: white;
   }
@@ -47,6 +52,23 @@
   }
 
   @media only screen and (max-width: 1150px) {
+    .background-text p {
+      font-size: 15px;
+      width: 200px;
+    }
+
+    img {
+      width: 336.014px;
+      height: 414px;
+
+      top: 0;
+      bottom: 0;
+
+      margin: auto;
+    }
+  }
+
+  @media only screen and (max-width: 720px) {
     img {
       width: 268.81px;
       height: 331.2px;
@@ -62,7 +84,7 @@
 
     h1 {
       font-size: 80px;
-      margin-top: 83px;
+      margin-top: 100px;
     }
 
     .mobile-student {
