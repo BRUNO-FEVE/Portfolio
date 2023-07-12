@@ -37,3 +37,50 @@
   .marquee {
     mix-blend-mode: difference;
   }
+
+  .mobile-loc {
+    display: none;
+  }
+
+  .mobile-student {
+    display: none;
+  }
+
+  @media only screen and (max-width: 1150px) {
+    img {
+      width: 268.81px;
+      height: 331.2px;
+
+      top: 0px;
+      bottom: 0;
+      margin: auto;
+    }
+
+    .background-text p {
+      display: none;
+    }
+
+    h1 {
+      font-size: 80px;
+      margin-top: 83px;
+    }
+
+    .mobile-student {
+      display: block;
+
+      text-align: right;
+      margin-right: 30px;
+      margin-top: 50px;
+      
+      font-family: roboto-slab-regular;
+    }
+
+    .mobile-loc {
+      display: block;
+
+      margin-top: 130px;
+      margin-left: 30px;
+
+      font-family: roboto-slab-light;
+    }
+  }

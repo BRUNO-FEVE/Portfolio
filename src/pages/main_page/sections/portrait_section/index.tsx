@@ -6,11 +6,13 @@ function PortraitSection() {
     return (
         <>
             <div className='first-section'>
+            <p className='mobile-student'>Estudante <br/> Engenharia de Computação & Front End</p>
                 <div className='background-text'>
                     <p>Estudante <br/> Engenharia de Computação & Front End</p>
                     <p>Localizado na Zona Sul de São Paulo</p>
                 </div>
                 <Marquee className='marquee'><h1>Bruno Fevereiro</h1></Marquee>
+                <p className='mobile-loc'>Localizado na <br /> Zona Sul de São Paulo</p>
                 <img src={portrait} alt="Bruno Fevereiro"/>
             </div>
         </>
