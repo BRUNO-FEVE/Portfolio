@@ -2,46 +2,6 @@ body {
   background-color: white;
 }
 
-.background-text {
-  margin: 251px 54px;
-  margin-bottom: 0;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  justify-self: center;
-}
-
-.background-text p {
-  font-family: roboto-slab-regular;
-}
-
-img {
-  width: 672.028px;
-  height: 828px;
-  border-radius: 350px;
-
-  position: absolute;
-  z-index: -1;
-  top: 32px;
-  left: 0;
-  right: 0;
-
-  margin: 0 auto;
-}
-
-h1 {
-  font-size: 200px;
-  margin-top: 272px;
-  margin-bottom: 0;
-
-  color: white;
-}
-
-.marquee {
-  mix-blend-mode: difference;
-}
-
 /* Second Section */
 
 .second-section {
