@@ -37,6 +37,11 @@ code {
   src: url(../public/fonts/roboto/Roboto-Light.ttf);
 }
 
+@font-face {
+  font-family: roboto-regular-extra-light;
+  src: url(../public/fonts/roboto/Roboto-Thin.ttf);
+}
+
 /* Roboto Slab */ 
 
 @font-face {

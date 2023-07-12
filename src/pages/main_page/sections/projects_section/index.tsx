@@ -1,4 +1,4 @@
-import './projects_section.css'
+import './styles.css'
 
 function ProjectsSection() {
     return (

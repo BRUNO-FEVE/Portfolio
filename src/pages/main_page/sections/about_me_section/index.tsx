@@ -1,5 +1,5 @@
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
-import './about_me_section.css'
+import './styles.css'
 
 
 function AboutMeSection() {

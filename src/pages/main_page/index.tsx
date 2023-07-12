@@ -4,6 +4,7 @@ import NavBar from '../../components/navbar/index';
 import PortraitSection from './sections/portrait_section/index';
 import AboutMeSection from './sections/about_me_section/index'
 import ProjectsSection from './sections/projects_section/index'
+import Footer, {  } from "../../components/footer/index";
 
 function main_page() {
   return (
@@ -12,7 +13,7 @@ function main_page() {
       <PortraitSection />
       <AboutMeSection />
       <ProjectsSection />
-      
+      <Footer />
     </>
   );
 }

@@ -1,6 +1,6 @@
 import portrait from '../../../../assets/retrato-sem-fundo.png'
 import Marquee from 'react-fast-marquee';
-import './portrait_section.css'
+import './styles.css'
 
 function PortraitSection() {
     return (

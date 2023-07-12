@@ -1,0 +1,80 @@
+.footer {
+    position: relative;
+    margin-top: 201px;
+    height: 504px;
+
+    text-align: center;
+
+    background-color: #171B2F;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer p {
+    color: white;
+    font-family: roboto-regular-extra-light;
+    font-size: 32px;
+}
+
+.footer h1 {
+    margin: 0;
+    font-family: raleway;
+    font-weight: 200;
+    font-size: 64px;
+}
+
+.buttons {
+    z-index: 2;
+    padding: 0 74px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-button {
+    padding: 10px;
+
+    font-family: roboto-regular-extra-light;
+    font-size: 24px;
+    color: white;
+
+    border: 1px solid white;
+    border-radius: 30px;
+    background-color: #171B2F;
+
+    cursor: pointer;
+}
+
+.contact-button {
+    height: 216px;
+    width: 208px;
+
+    background-color: #4361EE;
+    border-radius: 50%;
+    border: none;
+
+    cursor: pointer;
+}
+
+.contact-button p {
+    font-family: roboto-regular;
+}
+
+.line {
+    position: absolute;
+    z-index: 1;
+
+    height: 1px;
+    width: 95%;
+
+    right: 0;
+    left: 0;
+    bottom: 194px;
+
+    margin: 0 auto;
+
+    background-color: white;
+}
