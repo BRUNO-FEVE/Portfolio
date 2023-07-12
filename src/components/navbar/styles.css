@@ -7,7 +7,7 @@ p {
 
 .navbar {
     height: 66px;
-    margin-left: 39px;
+    margin: 0px 39px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,14 +18,16 @@ p {
 }
 
 .left-side {
+    width: 293px;
+
     padding: 0;
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
     list-style: none;
 }
 
 .left-side li {
-    margin-right: 58px;
     padding: 5px;
 }
 
@@ -40,8 +42,6 @@ p {
 
     .hamburguer-icon {
         display: block;
-        margin-right: 39px;
-
         font-size: 25px;
     }
 }
