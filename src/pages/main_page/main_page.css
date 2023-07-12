@@ -4,51 +4,6 @@ body {
 
 /* Second Section */
 
-.second-section {
-  margin: 320px 171px;
-
-  display: flex;
-  justify-content: center;
-}
-
-.main-phrase {
-  width: 920px;
-
-  font-family: roboto-regular-light;
-  font-size: 32px;
-}
-
-.about-me {
-  margin-left: 4.72vw;
-  width: 182.028px;
-  font-family: roboto-slab-light;
-}
-
-.about-me p {
-  font-size: 12px;
-}
-
-.about-me button {
-  margin-top: 34px;
-  padding: 0px;
-  width: 100%;
-
-  font-size:  24px;
-  font-family: roboto-slab-light;
-
-  background-color: white;
-  border: none;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.arrow-icon {
-  font-size: 46px;
-  color: rgba(67, 97, 238, 1);
-}
-
 /* Third Section */
 
 .third-section {

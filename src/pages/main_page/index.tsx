@@ -1,7 +1,8 @@
 import React from 'react';
 import './main_page.css';
 import NavBar from '../../components/navbar/index';
-import PortraitSection from './sections/Portrait-Section';
+import PortraitSection from './sections/portrait_section';
+import AboutMeSection from './sections/about_me_section'
 
 
 import { HiOutlineArrowLongRight } from 'react-icons/hi2'
@@ -12,14 +13,8 @@ function main_page() {
     <>
       <NavBar text="Projetos"/>
       <PortraitSection />
+      <AboutMeSection />
       
-      <div className='second-section'>
-        <p className='main-phrase'>Dando emoção a simples displays. Juntos podemos criar interfaces de usuário incríveis e intuitivas que proporcionam uma experiência de usuário excepcional.</p>
-        <div className='about-me'>
-          <p>Sou estudante de Engenharia da Computação no 3º ano no Instituto Mauá de Tecnologia em São Paulo. Tenho um grande interesse em desenvolvimento e design.</p>
-          <button>Sobre Mim<HiOutlineArrowLongRight className='arrow-icon'/></button>
-        </div>
-      </div>
       <div className='third-section'>
           <p>Últimos Projetos: </p>
           <div className='projects-boxes'>
