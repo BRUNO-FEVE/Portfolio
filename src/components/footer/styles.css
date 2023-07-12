@@ -27,6 +27,7 @@
 
 .buttons {
     z-index: 2;
+    margin-top: -30px;
     padding: 0 74px;
 
     display: flex;

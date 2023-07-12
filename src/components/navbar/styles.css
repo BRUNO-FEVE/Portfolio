@@ -6,14 +6,19 @@ p {
 }
 
 .navbar {
+    height: 66px;
     margin-left: 39px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-.left-side {
-    margin-left: auto;
+.title {
+    height: fit-content;
+}
 
+.left-side {
+    padding: 0;
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -22,4 +27,21 @@ p {
 .left-side li {
     margin-right: 58px;
     padding: 5px;
+}
+
+.hamburguer-icon {
+    display: none;
+}
+
+@media only screen and (max-width: 755px){
+    .left-side {
+        display: none;
+    }
+
+    .hamburguer-icon {
+        display: block;
+        margin-right: 39px;
+
+        font-size: 25px;
+    }
 }
