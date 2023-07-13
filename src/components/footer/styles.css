@@ -1,7 +1,7 @@
 .footer {
     position: relative;
     margin-top: 201px;
-    height: 504px;
+    height: 400px;
 
     text-align: center;
 
@@ -10,6 +10,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .footer p {
@@ -28,11 +29,14 @@
 .buttons {
     z-index: 2;
     margin-top: -30px;
-    padding: 0 74px;
+    margin: -30px 50px 0px 50px;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    width: 80vw;
+    max-width: 1440px;
 }
 
 .info-button {
@@ -69,13 +73,48 @@
     z-index: 1;
 
     height: 1px;
-    width: 95%;
+    width: 55vw;
 
     right: 0;
     left: 0;
-    bottom: 194px;
+    bottom: 157px;
 
     margin: 0 auto;
 
     background-color: white;
+}
+
+@media only screen and (max-width: 1050px) {
+    .buttons {
+        margin-top: -15px;
+    }
+
+    .contact-button {
+        height: 144px;
+        width: 138.67px;
+    }
+
+    .contact-button p {
+        font-size: 20px;
+    }
+
+    .line {
+        bottom: 151px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .footer {
+        height: 900px;
+    }
+
+    .buttons {
+        margin-top: 80px;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .line {
+        display: none;
+    }
 }
