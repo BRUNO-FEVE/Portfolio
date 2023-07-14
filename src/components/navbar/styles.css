@@ -27,8 +27,12 @@ p {
     list-style: none;
 }
 
+.home {
+    width: fit-content;
+}
+
 .left-side li {
-    padding: 5px;
+    padding: 5px;;
 }
 
 .hamburguer-icon {

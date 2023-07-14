@@ -33,7 +33,7 @@ function Navbar(props: { text: string; }) {
                 duration: 1.5, 
                 delay: .1
             }}>
-            <Link to={'/'} className='link'><p className="title">Coded & Desinged by Bruno</p></Link>
+            <Link to={'/'} className='link home'><p className="title">Coded & Desinged by Bruno</p></Link>
             <RxHamburgerMenu className="hamburguer-icon"/>
             <ul className="left-side">
                 {linksList.map((link) => {
