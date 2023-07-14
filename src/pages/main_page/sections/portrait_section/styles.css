@@ -26,8 +26,8 @@
   }
   
   img {
-    width: 672.028px;
-    height: 828px;
+    width: 610.93px;
+    height: 752.73px;
     border-radius: 350px;
   
     position: absolute;
@@ -40,8 +40,8 @@
   }
   
   h1 {
-    font-size: 200px;
-    margin-top: 272px;
+    font-size: 190px;
+    margin-top: 212px;
     margin-bottom: 0;
     margin-left: 30px;
   
@@ -75,6 +75,12 @@
 
       margin: auto;
     }
+
+    h1 {
+      font-size: 120px;
+
+      margin-top: 160px;
+    }
   }
 
   @media only screen and (max-width: 720px) {
@@ -97,7 +103,7 @@
 
     h1 {
       font-size: 80px;
-      margin-top: 100px;
+      margin-top: 60px;
     }
 
     .mobile-student {
@@ -113,7 +119,7 @@
     .mobile-loc {
       display: block;
 
-      margin-top: 130px;
+      margin-top: 140px;
       margin-left: 30px;
 
       font-family: roboto-slab-light;
