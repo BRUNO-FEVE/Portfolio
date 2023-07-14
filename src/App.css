@@ -16,6 +16,13 @@ code {
     monospace;
 }
 
+.link {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Fonts
   Raleway */ 
 

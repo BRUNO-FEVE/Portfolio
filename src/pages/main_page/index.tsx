@@ -1,5 +1,5 @@
 import React from 'react';
-import './main_page.css';
+import './styles.css';
 import NavBar from '../../components/navbar/index';
 import PortraitSection from './sections/portrait_section/index';
 import AboutMeSection from './sections/about_me_section/index'

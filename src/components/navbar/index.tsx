@@ -1,6 +1,7 @@
 import "./styles.css"
 import { motion } from 'framer-motion';
 import { RxHamburgerMenu } from "react-icons/rx";
+import { Link } from "react-router-dom";
 
 function Navbar(props: { text: string; }) {
 
@@ -32,7 +33,7 @@ function Navbar(props: { text: string; }) {
                 duration: 1.5, 
                 delay: .1
             }}>
-            <p className="title">Coded & Desinged by Bruno</p>
+            <Link to={'/'} className='link'><p className="title">Coded & Desinged by Bruno</p></Link>
             <RxHamburgerMenu className="hamburguer-icon"/>
             <ul className="left-side">
                 {linksList.map((link) => {
