@@ -9,7 +9,7 @@ import Footer, {  } from "../../components/footer/index";
 function main_page() {
   return (
     <>
-      <NavBar text="Projetos"/>
+      <NavBar text="Projetos" text_color_black={true} bg_color="white"/>
       <PortraitSection />
       <AboutMeSection />
       <ProjectsSection />

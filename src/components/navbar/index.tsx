@@ -1,9 +1,10 @@
 import "./styles.css"
+import "../../layouts/colors/styles.css"
 import { motion } from 'framer-motion';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-router-dom";
 
-function Navbar(props: { text: string; }) {
+function Navbar(props: { text: string; text_color_black: boolean; bg_color: string}) {
 
     const linksList = [
         {
@@ -25,7 +26,7 @@ function Navbar(props: { text: string; }) {
 
 
     return (
-        <motion.div className="navbar"
+        <motion.div className={"navbar " + props.bg_color}
             initial={{opacity: 0, y: -200}}
             animate={{opacity: 1, y: 0}}
             transition={{
@@ -33,8 +34,8 @@ function Navbar(props: { text: string; }) {
                 duration: 1.5, 
                 delay: .1
             }}>
-            <Link to={'/'} className='link home'><p className="title">Coded & Desinged by Bruno</p></Link>
-            <RxHamburgerMenu className="hamburguer-icon"/>
+            <Link to={'/'} className='link home'><p id={props.text_color_black ? '' : 'white'} className="title">Coded & Desinged by Bruno</p></Link>
+            <RxHamburgerMenu  className="hamburguer-icon" id={props.text_color_black ? '' : 'white'} key={""}/>
             <ul className="left-side">
                 {linksList.map((link) => {
                     return (
@@ -46,7 +47,7 @@ function Navbar(props: { text: string; }) {
                                 right: 0,
                                 bottom: 0,
                         }}>
-                            <p>{link.text}</p>
+                            <p id={props.text_color_black ? '' : 'white'}>{link.text}</p>
                         </motion.li>)
                 })}
             </ul>

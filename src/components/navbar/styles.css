@@ -5,12 +5,25 @@ p {
     cursor: pointer;
 }
 
+#white {
+    color: white;
+}
+
 .navbar {
+    width: 95vw;
     height: 66px;
-    margin: 0px 39px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+
+    background-color: transparent;
 }
 
 .title {
@@ -20,6 +33,7 @@ p {
 .left-side {
     width: 293px;
 
+    margin-left: auto;
     padding: 0;
     display: flex;
     justify-content: space-between;

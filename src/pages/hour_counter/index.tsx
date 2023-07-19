@@ -1,12 +1,11 @@
 import './styles.css'
-import Navbar from '../../components/navbar'
+import ProjectModal from '../../components/project_modal'
 
 function HourCounter() {
     return (
         <>
-            <Navbar text={'Projects'} />
             <div>
-                <h1>Teste</h1>
+                <ProjectModal bg_color="red" />
             </div>
         </>
     )
