@@ -1,5 +1,4 @@
 import "./styles.css"
-import "../../layouts/colors/styles.css"
 import { motion } from 'framer-motion';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-router-dom";
@@ -36,7 +35,7 @@ function Navbar(props: { text: string; text_color_black: boolean; bg_color: stri
             }}>
             <Link to={'/'} className='link home'><p id={props.text_color_black ? '' : 'white'} className="title">Coded & Desinged by Bruno</p></Link>
             <RxHamburgerMenu  className="hamburguer-icon" id={props.text_color_black ? '' : 'white'} key={""}/>
-            <ul className="left-side">
+            <ul className="right-side">
                 {linksList.map((link) => {
                     return (
                         <motion.li 

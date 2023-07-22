@@ -9,6 +9,10 @@ p {
     color: white;
 }
 
+.red {
+    background-color: #DF1822;
+}
+
 .navbar {
     width: 95vw;
     height: 66px;
@@ -30,14 +34,16 @@ p {
     height: fit-content;
 }
 
-.left-side {
-    width: 293px;
+.right-side {
+    width: fit-content;
 
     margin-left: auto;
     padding: 0;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    gap: 18px;
+
     list-style: none;
 }
 
@@ -45,16 +51,12 @@ p {
     width: fit-content;
 }
 
-.left-side li {
-    padding: 5px;;
-}
-
 .hamburguer-icon {
     display: none;
 }
 
 @media only screen and (max-width: 755px){
-    .left-side {
+    .right-side {
         display: none;
     }
 

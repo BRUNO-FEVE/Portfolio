@@ -1,4 +1,61 @@
 .container {
-    background-color: red;
+    background-color: #DF1822;
     height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.display-img {
+    height: 644.5px;
+    width: 925px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    position: relative;
+    z-index: 2;
+}
+
+.display-img p {
+    font-family: roboto-slab-regular;
+    font-size: 56px;
+    color: white;
+
+    margin-bottom: 100px;
+}
+
+.github-icon {
+    color: white;
+    font-size: 40px;
+
+    position: absolute;
+    bottom: 207.72px;
+    left: 103.22px;
+    transform: rotate(-20.73deg);
+}
+
+.background-icon {
+    color: white;
+    font-size: 550px;
+    opacity: 20%;
+
+    position: absolute;
+    z-index: 1;
+
+    top: 46px;
+    margin-left: 450px;
+}
+
+.hour-counter-img {
+    background-image: url('../../assets/1-pc-hour-counter.png');
 }

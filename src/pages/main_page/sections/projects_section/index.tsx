@@ -16,7 +16,7 @@ function ProjectsSection() {
                                         {/* <div className='big-pointer pointer'></div>
                                         <div className='small-pointer pointer'></div> */}
                                     </div>
-                                    <p className='teste'>Hour Counter</p>
+                                    <p className='hour-counter-text'>Hour Counter</p>
                                 </div>
                             </Link>
                         </div>

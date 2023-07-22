@@ -13,7 +13,7 @@ function PortraitSection() {
                 </div>
                 <Marquee className='marquee'><h1>Bruno Fevereiro</h1></Marquee>
                 <p className='mobile-loc'>Localizado na <br /> Zona Sul de São Paulo</p>
-                <img src={portrait} alt="Bruno Fevereiro"/>
+                <img src={portrait} alt="Bruno Fevereiro" className='portrait'/>
             </div>
         </>
     )

@@ -27,7 +27,7 @@
     text-align: right;
   }
   
-  img {
+  .portrait {
     width: 610.93px;
     height: 752.73px;
     border-radius: 350px;
@@ -72,7 +72,7 @@
       width: 200px;
     }
 
-    img {
+    .portrait {
       width: 448.0187px;
       height: 552px;
 
@@ -95,7 +95,7 @@
       margin-top: 165px;
     }
 
-    img {
+    .portrait {
       width: 268.81px;
       height: 331.2px;
 
