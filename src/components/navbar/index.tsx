@@ -2,8 +2,11 @@ import "./styles.css"
 import { motion } from 'framer-motion';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 function Navbar(props: { text: string; text_color_black: boolean; bg_color: string}) {
+
+    const [ onProjects, setOnProjects ] = useState(false)
 
     const linksList = [
         {
@@ -23,6 +26,11 @@ function Navbar(props: { text: string; text_color_black: boolean; bg_color: stri
         },
     ];
 
+    useEffect(() => {
+        if (props.text === 'Ficha Técnica') {
+            setOnProjects(true)
+        }
+    }, [props.text])
 
     return (
         <motion.div className={"navbar " + props.bg_color}
@@ -33,8 +41,8 @@ function Navbar(props: { text: string; text_color_black: boolean; bg_color: stri
                 duration: 1.5, 
                 delay: .1
             }}>
-            <Link to={'/'} className='link home'><p id={props.text_color_black ? '' : 'white'} className="title">Coded & Desinged by Bruno</p></Link>
-            <RxHamburgerMenu  className="hamburguer-icon" id={props.text_color_black ? '' : 'white'} key={""}/>
+            <Link to={'/'} className='link home'><p className={props.text_color_black ? 'title black' : 'title white'} >Coded & Desinged by Bruno</p></Link>
+            <RxHamburgerMenu className={props.text_color_black ? 'hamburguer-icon black' : 'hamburguer-icon white'} key={""}/>
             <ul className="right-side">
                 {linksList.map((link) => {
                     return (
@@ -46,7 +54,7 @@ function Navbar(props: { text: string; text_color_black: boolean; bg_color: stri
                                 right: 0,
                                 bottom: 0,
                         }}>
-                            <p id={props.text_color_black ? '' : 'white'}>{link.text}</p>
+                            <p id={ onProjects && link.id === 1  ? 'yellow' : '' } className={props.text_color_black ? 'black' : 'white'}>{link.text}</p>
                         </motion.li>)
                 })}
             </ul>

@@ -5,8 +5,16 @@ p {
     cursor: pointer;
 }
 
-#white {
+#yellow {
+    color: yellow;
+}
+
+.white {
     color: white;
+}
+
+.black {
+    color: black;
 }
 
 .red {
