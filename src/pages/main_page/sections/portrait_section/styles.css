@@ -63,6 +63,10 @@
   }
 
   @media only screen and (max-width: 1150px) {
+    .first-section {
+      margin-top: 105px;
+    }
+
     .background-text p {
       font-size: 15px;
       width: 200px;
@@ -88,6 +92,7 @@
   @media only screen and (max-width: 720px) {
     .first-section {
       display: block;
+      margin-top: 165px;
     }
 
     img {

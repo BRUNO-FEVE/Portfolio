@@ -6,7 +6,7 @@ function PortraitSection() {
     return (
         <>
             <div className='first-section'>
-            <p className='mobile-student'>Estudante <br/> Engenharia de Computação & Front End</p>
+                <p className='mobile-student'>Estudante <br/> Engenharia de Computação & Front End</p>
                 <div className='background-text'>
                     <p>Estudante <br/> Engenharia de Computação & Front End</p>
                     <p className='web-loc'>Localizado na Zona Sul de São Paulo</p>
