@@ -46,13 +46,15 @@
 
 .background-icon {
     color: white;
-    font-size: 550px;
     opacity: 20%;
+
+    width: 500px;
+    height: 564px;
 
     position: absolute;
     z-index: 1;
 
-    top: 46px;
+    top: 15px;
     margin-left: 450px;
 }
 
