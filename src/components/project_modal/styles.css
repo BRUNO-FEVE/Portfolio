@@ -1,4 +1,8 @@
-.container {
+body {
+    background-color: #DF1822;
+}
+
+.container-display {
     background-color: #DF1822;
     height: 100vh;
 
@@ -60,4 +64,30 @@
 
 .hour-counter-img {
     background-image: url('../../assets/1-pc-hour-counter.png');
+}
+
+.container-objective {
+    font-size: 20px;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: white;
+}
+
+.objective-title {
+    position: absolute;
+    top: 75px;
+    left: 112px;
+}
+
+.objective-text {
+    font-size: 24px;
+    text-align: justify;
+    margin-top: 164px;
+
+
+    width: 829px;
 }
