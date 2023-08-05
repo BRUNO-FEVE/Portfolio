@@ -91,3 +91,9 @@ body {
 
     width: 829px;
 }
+
+.objective-icon-list {
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+}
