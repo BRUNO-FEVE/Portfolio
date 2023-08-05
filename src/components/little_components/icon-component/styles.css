@@ -1,0 +1,12 @@
+.icon-component {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 168px;
+}
+
+.icon-left {
+    font-size: 40px;
+}
