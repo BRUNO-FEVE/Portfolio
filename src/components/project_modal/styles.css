@@ -174,10 +174,21 @@
     top: 1432px;
 }
 
+.carousel-cards {
+    display: flex;
+    flex-direction: row;
+}
+
 .img-db-connection-1 {
     background-image: url('../../assets/db-connection-structure-1.png');
     width: 761px;
     height: 216px;
+}
+
+.img-db-connection-2 {
+    background-image: url('../../assets/db-connection-structure-2.png');
+    width: 973px;
+    height: 334px;
 }
 
 .carousel-bar {
