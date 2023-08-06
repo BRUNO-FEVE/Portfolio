@@ -49,6 +49,25 @@ function ProjectModal(props: {bg_color: string}) {
         }
     ]
 
+    const cardsList = [
+        {
+            img: <div className='default-img img-db-connection-1'/>,
+            text: 'A função insertLogin( ) é responsável por inserir os dados de login no banco de dados, permitindo o registro de novos usuários.'
+        },
+        {
+            img: <div className='default-img img-db-connection-2'/>,
+            text: 'A função insertLogin( ) é responsável por inserir os dados de login no banco de dados, permitindo o registro de novos usuários.'
+        },
+        {
+            img: <div className='default-img img-db-connection-3'/>,
+            text: 'A função insertLogin( ) é responsável por inserir os dados de login no banco de dados, permitindo o registro de novos usuários.'
+        },
+        {
+            img: <div className='default-img img-db-connection-4'/>,
+            text: 'A função insertLogin( ) é responsável por inserir os dados de login no banco de dados, permitindo o registro de novos usuários.'
+        },
+    ]
+
     const chooseSelected = (index: number) => {
         if(checkedIndex === index) {
             return true
@@ -107,22 +126,12 @@ function ProjectModal(props: {bg_color: string}) {
                 <p className='db-title'>Conexão com o Banco de Dados:</p>
                 <p className='default-paragraph'>Essas quatro funções desempenham papéis cruciais na interação com o banco de dados MySQL, garantindo o <span>armazenamento correto</span> dos dados e o <span>acesso adequado</span> às informações necessárias para o sistema de contador de horas.</p>
                 <div className='carousel-cards'>
-                    <CarouselCardAnimation index={0} checkedIndex={checkedIndex}>
-                        <div className='default-img img-db-connection-1'/>
-                        <p>A função insertLogin( ) é responsável por inserir os dados de login no banco de dados, permitindo o registro de novos usuários.</p>
-                    </CarouselCardAnimation>   
-                    <CarouselCardAnimation index={1} checkedIndex={checkedIndex}>
-                        <div className='default-img img-db-connection-1'/>
-                        <p>A função insertLogin( ) é responsável por inserir os dados de login no banco de dados, permitindo o registro de novos usuários.</p>
-                    </CarouselCardAnimation>  
-                    <CarouselCardAnimation index={2} checkedIndex={checkedIndex}>
-                        <div className='default-img img-db-connection-1'/>
-                        <p>A função insertLogin( ) é responsável por inserir os dados de login no banco de dados, permitindo o registro de novos usuários.</p>
-                    </CarouselCardAnimation>   
-                    <CarouselCardAnimation index={3} checkedIndex={checkedIndex}>
-                        <div className='default-img img-db-connection-1'/>
-                        <p>A função insertLogin( ) é responsável por inserir os dados de login no banco de dados, permitindo o registro de novos usuários.</p>
-                    </CarouselCardAnimation>    
+                    {cardsList.map((card, index) => {
+                        return <CarouselCardAnimation index={index} checkedIndex={checkedIndex}>
+                        {card.img}
+                        <p>{card.text}</p>
+                    </CarouselCardAnimation>
+                    })}      
                 </div>
                 <div className='carousel-bar'>
                     <MdArrowBackIos className='carousel-icon' onClick={changeSelectedLeft}/>

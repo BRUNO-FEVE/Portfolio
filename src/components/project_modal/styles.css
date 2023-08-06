@@ -191,6 +191,18 @@
     height: 334px;
 }
 
+.img-db-connection-3 {
+    background-image: url('../../assets/db-connection-structure-3.png');
+    width: 913px;
+    height: 216px;
+}
+
+.img-db-connection-4 {
+    background-image: url('../../assets/db-connection-structure-4.png');
+    width: 949px;
+    height: 325px;
+}
+
 .carousel-bar {
     display: flex;
     align-items: center;

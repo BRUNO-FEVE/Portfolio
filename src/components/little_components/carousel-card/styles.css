@@ -9,6 +9,8 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+
+    padding: 15px;
 }
 
 .carousel-card p {
