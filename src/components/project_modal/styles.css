@@ -97,3 +97,31 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
+.container-theme {
+    padding: 141px 306px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 44px;
+}
+
+.theme-png {
+    background-image: url('../../assets/color_blub.png');
+    height: 100px;
+    width: 100px;
+}
+
+.container-theme p {
+    color: white;
+    font-family: roboto-slab-light;
+    font-size: 24px;
+    text-align: justify;
+}
+
+.container-theme span {
+    font-family: roboto-slab-regular;
+    font-size: 30px;
+    color: #FDCA40;
+}

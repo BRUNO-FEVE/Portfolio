@@ -50,6 +50,10 @@ function ProjectModal(props: {bg_color: string}) {
                     })}
                 </div>
             </div>
+            <div className='container-theme'>
+                <div className='theme-png' />
+                <p>Foi escolhido como tema a implementação de um <span>sistema de registro de horas</span> para as diversas entidades do Instituto Mauá de Tecnologia, visando a padronização desse procedimento em toda a instituição.</p>
+            </div>
         </>
     )
 }
