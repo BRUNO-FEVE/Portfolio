@@ -8,10 +8,12 @@ import { MdArrowForwardIos, MdArrowBackIos } from 'react-icons/md'
 import IconComponent from '../little_components/icon-component'
 import CarouselCard from '../little_components/carousel-card'
 import SmallCircle from '../little_components/small-circle'
+import { useState } from 'react'
 
 // import { computerOne } from "../../assets/1-pc-hourcounter.png";
 
 function ProjectModal(props: {bg_color: string}) {
+    const [checkedIndex, setCheckedIndex] = useState(0)
 
     const iconsList = [
         {
@@ -31,6 +33,45 @@ function ProjectModal(props: {bg_color: string}) {
             label: 'Interfaces Graficas'
         }
     ]
+
+    const circlesBarList = [
+        {
+            url: ''
+        },
+        {
+            url: ''
+        },
+        {
+            url: ''
+        },
+        {
+            url: ''
+        }
+    ]
+
+    const chooseSelected = (index: number) => {
+        if(checkedIndex === index) {
+            return true
+        } else {
+            return false
+        }
+    }
+
+    const changeSelectedLeft = () => {
+        if (checkedIndex === 0) {
+            setCheckedIndex(circlesBarList.length - 1)
+        } else {
+            setCheckedIndex(checkedIndex - 1)
+        }
+    }
+
+    const changeSelectedRight = () => {
+        if (checkedIndex === circlesBarList.length-1) {
+            setCheckedIndex(0)
+        } else {
+            setCheckedIndex(checkedIndex + 1)
+        }
+    }
 
     return (
         <div className='project-modal'>
@@ -70,14 +111,15 @@ function ProjectModal(props: {bg_color: string}) {
                     <p>A função insertLogin( ) é responsável por inserir os dados de login no banco de dados, permitindo o registro de novos usuários.</p>
                 </CarouselCard>
                 <div className='carousel-bar'>
-                    <MdArrowBackIos className='carousel-icon'/>
+                    <MdArrowBackIos className='carousel-icon' onClick={changeSelectedLeft}/>
                     <div className='carousel-circles'>
-                        <SmallCircle isChecked={true}/>
-                        <SmallCircle isChecked={false}/>
-                        <SmallCircle isChecked={false}/>
-                        <SmallCircle isChecked={false}/>
+                        {circlesBarList.map((circle, index) => {
+                            return <div>
+                                <SmallCircle isChecked={chooseSelected(index)}/>
+                            </div>
+                        })}
                     </div>
-                    <MdArrowForwardIos className='carousel-icon'/>
+                    <MdArrowForwardIos className='carousel-icon' onClick={changeSelectedRight}/>
                 </div>
             </div>
         </ div>

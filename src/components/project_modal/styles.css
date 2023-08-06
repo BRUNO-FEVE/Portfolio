@@ -189,6 +189,8 @@
 .carousel-icon {
     font-size: 30px;
     color: rgb(143, 143, 143);
+
+    cursor: pointer;
 }
 
 .carousel-circles {
