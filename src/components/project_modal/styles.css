@@ -113,14 +113,14 @@
     width: 100px;
 }
 
-.container-theme p {
+.default-paragraph-white {
     color: white;
     font-family: roboto-slab-light;
     font-size: 24px;
     text-align: justify;
 }
 
-.container-theme span {
+.default-paragraph-white span {
     font-family: roboto-slab-regular;
     font-size: 30px;
     color: #FDCA40;
@@ -219,4 +219,22 @@
 .carousel-circles {
     display: flex;
     gap: 24px;
+}
+
+.container-conclusion {
+    padding-top: 127px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.conclusion-img {
+    background-image: url('../../assets/conclusion-img.png');
+    width: 420px;
+    height: 497px;
+}
+
+.container-conclusion p {
+    width: 609px;
 }

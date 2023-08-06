@@ -9,6 +9,7 @@ import IconComponent from '../little_components/icon-component'
 import { CarouselCardAnimation } from '../little_components/carousel-card'
 import SmallCircle from '../little_components/small-circle'
 import { useState } from 'react'
+import Footer from '../footer'
 
 // import { computerOne } from "../../assets/1-pc-hourcounter.png";
 
@@ -115,7 +116,7 @@ function ProjectModal(props: {bg_color: string}) {
             </div>
             <div className='container-theme'>
                 <div className='theme-png' />
-                <p>Foi escolhido como tema a implementação de um <span>sistema de registro de horas</span> para as diversas entidades do Instituto Mauá de Tecnologia, visando a padronização desse procedimento em toda a instituição.</p>
+                <p className='default-paragraph-white'>Foi escolhido como tema a implementação de um <span>sistema de registro de horas</span> para as diversas entidades do Instituto Mauá de Tecnologia, visando a padronização desse procedimento em toda a instituição.</p>
             </div>
             <div className='container-documentation'>
                 <p className='default-paragraph'>Após a definição do tema, elaboramos as interfaces gráficas e planejamos o banco de dados, permitindo-nos identificar quais seriam as partes mais desafiadoras do projeto.</p>
@@ -145,6 +146,11 @@ function ProjectModal(props: {bg_color: string}) {
                     <MdArrowForwardIos className='carousel-icon' onClick={changeSelectedRight}/>
                 </div>
             </div>
+            <div className='container-conclusion'>
+                <div className='default-img conclusion-img' />
+                <p className='default-paragraph-white'>Implementamos com sucesso uma <span>solução centralizada para um problema real</span> enfrentado pelas entidades e membros do Instituto Mauá de Tecnologia. Por meio da integração de funcionalidades que abrangem o registro de horas, login e manipulação de dados, nossa plataforma simplifica o processo, proporcionando padronização, transparência e controle. Essa solução eficiente facilita o acompanhamento e análise das horas trabalhadas. Como resultado, melhoramos significativamente a gestão das horas, beneficiando diretamente o Instituto Mauá de Tecnologia.</p>
+            </div>
+            <Footer />
         </ div>
     )
 }
