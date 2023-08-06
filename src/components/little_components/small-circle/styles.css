@@ -1,0 +1,24 @@
+.circle {
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.selected-circle {
+    background-color: #DF1822;
+    width: 10px;
+    height: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.unselected-circle {
+    background-color: #F4F4F4;;
+    width: 6px;
+    height: 6px;
+}
+
+.none {
+    display: none;
+}
