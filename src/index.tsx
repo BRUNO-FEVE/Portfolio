@@ -13,7 +13,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/hour-counter',
-    element: <HourCounter />
+    element: <HourCounter bg_color='red'/>
   }
 ])
 

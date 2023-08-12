@@ -1,0 +1,240 @@
+.project-modal {
+    background-color: #DF1822;
+}
+
+.container-display {
+    background-color: #DF1822;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.display-img {
+    height: 644.5px;
+    width: 925px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    position: relative;
+    z-index: 2;
+}
+
+.display-img p {
+    font-family: roboto-slab-regular;
+    font-size: 56px;
+    color: white;
+
+    margin-bottom: 100px;
+}
+
+.github-icon {
+    color: white;
+    font-size: 40px;
+
+    position: absolute;
+    bottom: 207.72px;
+    left: 103.22px;
+    transform: rotate(-20.73deg);
+}
+
+.background-icon {
+    color: white;
+    opacity: 20%;
+
+    width: 500px;
+    height: 564px;
+
+    position: absolute;
+    z-index: 1;
+
+    top: 15px;
+    margin-left: 450px;
+}
+
+.hour-counter-img {
+    background-image: url('../../assets/1-pc-hour-counter.png');
+}
+
+.container-objective {
+    font-size: 20px;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: white;
+}
+
+.objective-title {
+    position: absolute;
+    top: 75px;
+    left: 112px;
+}
+
+.objective-text {
+    font-size: 24px;
+    text-align: justify;
+    margin-top: 164px;
+
+
+    width: 829px;
+}
+
+.objective-icon-list {
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-theme {
+    padding: 141px 306px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 44px;
+}
+
+.theme-png {
+    background-image: url('../../assets/color_blub.png');
+    height: 100px;
+    width: 100px;
+}
+
+.default-paragraph-white {
+    color: white;
+    font-family: roboto-slab-light;
+    font-size: 24px;
+    text-align: justify;
+}
+
+.default-paragraph-white span {
+    font-family: roboto-slab-regular;
+    font-size: 30px;
+    color: #FDCA40;
+}
+
+.container-documentation {
+    background-color: white;
+    padding: 168px 0;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 65px;
+}
+
+.default-paragraph {
+    width: 835px;
+    font-size: 24px;
+    text-align: justify;
+}
+
+.default-paragraph span {
+    font-size: 30px;
+    font-family: roboto-slab-regular;
+}
+
+.default-img {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.prototype-img {
+    background-image: url('../../assets/prototype.png');
+    width: 628px;
+    height: 227px;
+}
+
+.poo-model-img {
+    background-image: url('../../assets/poo-model.png');
+    width: 624px;
+    height: 240px;
+
+    margin-bottom: 67px;
+}
+
+.db-title {
+    position: absolute;
+    left: 112px;
+    top: 1432px;
+}
+
+.carousel-cards {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-db-connection-1 {
+    background-image: url('../../assets/db-connection-structure-1.png');
+    width: 761px;
+    height: 216px;
+}
+
+.img-db-connection-2 {
+    background-image: url('../../assets/db-connection-structure-2.png');
+    width: 973px;
+    height: 334px;
+}
+
+.img-db-connection-3 {
+    background-image: url('../../assets/db-connection-structure-3.png');
+    width: 913px;
+    height: 216px;
+}
+
+.img-db-connection-4 {
+    background-image: url('../../assets/db-connection-structure-4.png');
+    width: 949px;
+    height: 325px;
+}
+
+.carousel-bar {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+
+.carousel-icon {
+    font-size: 30px;
+    color: rgb(143, 143, 143);
+
+    cursor: pointer;
+}
+
+.carousel-circles {
+    display: flex;
+    gap: 24px;
+}
+
+.container-conclusion {
+    padding-top: 127px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.conclusion-img {
+    background-image: url('../../assets/conclusion-img.png');
+    width: 420px;
+    height: 497px;
+}
+
+.container-conclusion p {
+    width: 609px;
+}
