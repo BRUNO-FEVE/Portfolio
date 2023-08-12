@@ -15,6 +15,7 @@ function CarouselCardAnimation(props: {children: ReactNode, index: number, check
 
   const variants = {
     hidden: { opacity: 1, x: window.innerWidth},
+    animation: {opacity: 1, x: -503},
     visible: {opacity: 1, x: 0},
     exit: {opacity: 1 ,x: -window.innerWidth}
   }

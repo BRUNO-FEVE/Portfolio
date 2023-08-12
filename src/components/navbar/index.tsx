@@ -2,11 +2,14 @@ import "./styles.css"
 import { motion } from 'framer-motion';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { useFollowPointer } from "../little_components/use-follow-pointer";
 
 function Navbar(props: { text: string; text_color_black: boolean; bg_color: string}) {
-
+    // const ref = useRef(null)
+    // const {x, y} = useFollowPointer(ref)
     const [ onProjects, setOnProjects ] = useState(false)
+    // const [ isHovered, setHovered ]= useState(false)
 
     const linksList = [
         {
@@ -25,6 +28,10 @@ function Navbar(props: { text: string; text_color_black: boolean; bg_color: stri
             url: '',
         },
     ];
+
+    // const handleHover = () => {
+    //     setHovered(!isHovered)
+    // }
 
     useEffect(() => {
         if (props.text === 'Ficha Técnica') {
@@ -47,6 +54,10 @@ function Navbar(props: { text: string; text_color_black: boolean; bg_color: stri
                 {linksList.map((link) => {
                     return (
                         <motion.li 
+                            // onMouseEnter={handleHover}
+                            // onMouseLeave={handleHover}
+                            // ref={ref}
+                            // animate={isHovered ? { x , y } : ''}
                             drag 
                             dragConstraints={{
                                 top: 0,
@@ -54,7 +65,12 @@ function Navbar(props: { text: string; text_color_black: boolean; bg_color: stri
                                 right: 0,
                                 bottom: 0,
                         }}>
-                            <p id={ onProjects && link.id === 1  ? 'yellow' : '' } className={props.text_color_black ? 'black' : 'white'}>{link.text}</p>
+                            <motion.p 
+                            id={ onProjects && link.id === 1  ? 'yellow' : '' } 
+                            className={props.text_color_black ? 'black' : 'white'}
+                            >
+                                {link.text}
+                            </motion.p>
                         </motion.li>)
                 })}
             </ul>
