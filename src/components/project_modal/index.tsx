@@ -1,6 +1,5 @@
 import Navbar from '../navbar'
 import './styles.css'
-import { FaGithub } from 'react-icons/fa'
 import { ReactNode } from 'react'
 
 // import { computerOne } from "../../assets/1-pc-hourcounter.png";
